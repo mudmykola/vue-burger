@@ -11,8 +11,6 @@ import TheHeader from '@/components/TheHeader.vue'
   export default {
     name: 'TheHome',
 
-    components: {
-    TheHeader
-},
+    components: {TheHeader,},
   }
 </script>

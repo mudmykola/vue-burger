@@ -14,34 +14,29 @@
             ORDER NOW</v-btn>
         </v-hover>
       </v-toolbar>
-      <template >
-  <v-card class=" white--text header-cont"  outlined color=" transparent" width="540" >
-    <v-list-item-subtitle class=" font-weight-medium text-subtitle-2">FAST FOOD BURGERS</v-list-item-subtitle>
+      <template>
+        <v-card class=" white--text header-cont" outlined color=" transparent" width="540">
+          <v-list-item-subtitle class=" font-weight-medium text-subtitle-2">FAST FOOD BURGERS</v-list-item-subtitle>
           <v-list-item-title class=" text-h2 text-wrap font-weight-medium mt-2 ">
-The fastest food, for instant hunger.
+            The fastest food, for instant hunger.
           </v-list-item-title>
-         <v-list-item-subtitle class=" text-wrap mt-9 font-weight-regular opacity-subtitle">Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've been left eating my thoughts, my words & my food and gone back for seconds.
-            </v-list-item-subtitle>
-    
-          <v-hover v-slot="{ hover }" >
-            <v-btn class=" white--text font-weight-medium mt-10" 
+          <v-list-item-subtitle class=" text-wrap mt-9 font-weight-regular opacity-subtitle">Some food has looked so
+            awful that it's looked like something that the dog's brought home, yet after one mouthful I've been left
+            eating my thoughts, my words & my food and gone back for seconds.
+          </v-list-item-subtitle>
+          <v-hover v-slot="{ hover }">
+            <v-btn class=" white--text font-weight-medium mt-10"
               :style="{ 'background-color': hover ? '#FF5D00' : '#F6762C' }">
               ORDER NOW</v-btn>
           </v-hover>
-  </v-card>
+        </v-card>
       </template>
-     
-      
-
-   
     </v-container>
   </div>
 </template>
-
 <script >
 export default {
   data() {
-
     return {
       items: [
         {
@@ -49,15 +44,10 @@ export default {
         },
       ],
       links: [
-
         'Home', 'Pages', 'OUR OFFER', 'PRICING', 'Shop',
-
-
       ]
     }
-
   }
-
 }
 </script>
 
@@ -69,10 +59,12 @@ export default {
   background-position: center;
   background-size: cover;
 }
-.header-cont{
+
+.header-cont {
   margin-top: 186px;
 }
-.opacity-subtitle{
+
+.opacity-subtitle {
   opacity: 0.7;
 }
 </style>
