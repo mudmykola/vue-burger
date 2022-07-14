@@ -23,4 +23,7 @@ export default {
     margin: 0 auto;
     padding: 0 15px;
 }
+.opacity-subtitle {
+  opacity: 0.7;
+}
 </style>
