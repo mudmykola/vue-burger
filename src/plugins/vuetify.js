@@ -13,6 +13,9 @@ export default new Vuetify({
         themes: {
             dark: {
                 background: '#1C1C1C',
+            },
+            promo: {
+                background: '#312F30',
             }
         },
 

@@ -1,16 +1,16 @@
 <template >
   <div class="header ">
     <v-container>
-      <v-toolbar color=" transparent  " align-center outlined>
+      <v-toolbar color=" transparent  " align-center outlined flat>
         <v-list-item-avatar>
-          <v-img src="../assets/top-logo.png" width="100px" height="100px"></v-img>
+          <v-img src="../assets/image/top-logo.png" width="100px" height="100px"></v-img>
         </v-list-item-avatar>
         <v-tabs color="#FF5D00 " centered>
           <v-tab class=" white--text font-weight-regular text-lg-center" v-for="link in links" :key="link">{{ link
           }} </v-tab>
         </v-tabs>
         <v-hover v-slot="{ hover }">
-          <v-btn class=" white--text font-weight-medium" :style="{ 'background-color': hover ? '#FF5D00' : '#F6762C' }">
+          <v-btn class=" white--text font-weight-medium" width="165" height="49" :style="{ 'background-color': hover ? '#FF5D00' : '#F6762C' }">
             ORDER NOW</v-btn>
         </v-hover>
       </v-toolbar>
@@ -25,7 +25,7 @@
             eating my thoughts, my words & my food and gone back for seconds.
           </v-list-item-subtitle>
           <v-hover v-slot="{ hover }">
-            <v-btn class=" white--text font-weight-medium mt-10"
+            <v-btn class=" white--text font-weight-medium mt-10" width="165" height="49"
               :style="{ 'background-color': hover ? '#FF5D00' : '#F6762C' }">
               ORDER NOW</v-btn>
           </v-hover>
@@ -40,7 +40,7 @@ export default {
     return {
       items: [
         {
-          logo: '../assets/top-logo.png'
+          logo: '../assets/image/top-logo.png'
         },
       ],
       links: [
@@ -53,7 +53,7 @@ export default {
 
 <style>
 .header {
-  background-image: url('../assets/header-bg.png');
+  background-image: url('../assets/image/header-bg.png');
   background-repeat: no-repeat;
   height: 100vh;
   background-position: center;
